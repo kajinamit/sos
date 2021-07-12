@@ -57,6 +57,7 @@ class RabbitMQ(Plugin, IndependentPlugin):
         ])
         self.add_copy_spec([
             "/var/log/rabbitmq/*",
+            "/var/log/containers/rabbitmq/erl_crash.dump"
         ])
 
     def postproc(self):
